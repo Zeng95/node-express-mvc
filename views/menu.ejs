@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./partials/head') -%>
+</head>
+
+<body>
+  <ul>
+    <% meals.forEach((meal) => { %>
+    <li><%= meal.name %> price: <%= meal.price %></li>
+    <% }) %>
+  </ul>
+</body>
+
+</html>
