@@ -1,7 +1,7 @@
 const meals = [
-  { name: "MilkShake", type: "breakfast", price: 8 },
-  { name: "Lazanya", type: "lunch", price: 20 },
-  { name: "Roast Lamb", type: "dinner", price: 50 }
+  { name: "MilkShake", type: "breakfast", price: 8, className: 'list-group-item-danger' },
+  { name: "Lazanya", type: "lunch", price: 20, className: 'list-group-item-warning' },
+  { name: "Roast Lamb", type: "dinner", price: 50, className: 'list-group-item-info' }
 ]
 
 class Meal {

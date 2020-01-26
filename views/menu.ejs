@@ -6,11 +6,17 @@
 </head>
 
 <body>
-  <ul>
-    <% meals.forEach((meal) => { %>
-    <li><%= meal.name %> price: <%= meal.price %></li>
-    <% }) %>
-  </ul>
+  <div class="container">
+    <ul class="menu list-group">
+      <% meals.forEach((meal) => { %>
+      <li class="meal list-group-item <%= meal.className %>">
+        <p>Name: <%= meal.name %></p>
+        <p>Type: <%= meal.type %></p>
+        <p>Price: <%= meal.price %> RMB</p>
+      </li>
+      <% }) %>
+    </ul>
+  </div>
 </body>
 
 </html>
