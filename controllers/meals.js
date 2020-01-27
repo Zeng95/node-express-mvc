@@ -1,4 +1,3 @@
-// Meal model
 const Meal = require('../models/meal')
 
 // Controller function
