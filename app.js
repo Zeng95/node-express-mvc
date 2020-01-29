@@ -4,13 +4,13 @@ const path = require('path')
 const cookieParser = require('cookie-parser')
 const logger = require('morgan')
 
+global.__basedir = __dirname
+
 const menuRouter = require('./routes/menu')
 const adminRouter = require('./routes/admin')
 const errorController = require('./controllers/error.js')
 
 const app = express()
-
-global.__basedir = __dirname
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))

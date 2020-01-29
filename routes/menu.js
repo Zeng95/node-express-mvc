@@ -5,4 +5,4 @@ const mealsController = require('../controllers/meals')
 
 router.get('/', mealsController.getMeals)
 
-module.exports = router 
+module.exports = router
